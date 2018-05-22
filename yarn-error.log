@@ -1,0 +1,60 @@
+Arguments: 
+  /Users/oliverp/.nvm/versions/node/v9.2.1/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/oliverp/.nvm/versions/node/v9.2.1/bin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin
+
+Yarn version: 
+  0.17.8
+
+Node version: 
+  9.2.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "nuxtvuecli",
+    "version": "1.0.0",
+    "description": "Nuxt.js project",
+    "author": "Oliver Pfeiffer <oliverpfeiffer@me.com>",
+    "private": true,
+    "scripts": {
+      "dev": "nuxt",
+      "build": "nuxt build",
+      "start": "nuxt start",
+      "generate": "nuxt generate",
+      "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+      "precommit": "npm run lint"
+    },
+    "dependencies": {
+      "nuxt": "^1.0.0"
+    },
+    "devDependencies": {
+      "babel-eslint": "^8.2.1",
+      "eslint": "^4.15.0",
+      "eslint-friendly-formatter": "^3.0.0",
+      "eslint-loader": "^1.7.1",
+      "eslint-plugin-vue": "^4.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@babel/types/-/types-7.0.0-beta.44.tgz: invalid tar file
+      at Extract.Parse._startEntry (/usr/local/lib/node_modules/yarn/updates/0.17.8/node_modules/tar/lib/parse.js:149:13)
+      at Extract.Parse._process (/usr/local/lib/node_modules/yarn/updates/0.17.8/node_modules/tar/lib/parse.js:131:12)
+      at BlockStream.<anonymous> (/usr/local/lib/node_modules/yarn/updates/0.17.8/node_modules/tar/lib/parse.js:47:8)
+      at BlockStream.emit (events.js:159:13)
+      at BlockStream._emitChunk (/usr/local/lib/node_modules/yarn/updates/0.17.8/node_modules/block-stream/block-stream.js:145:10)
+      at BlockStream.write (/usr/local/lib/node_modules/yarn/updates/0.17.8/node_modules/block-stream/block-stream.js:45:10)
+      at Extract.Parse.write (/usr/local/lib/node_modules/yarn/updates/0.17.8/node_modules/tar/lib/parse.js:81:23)
+      at UnpackStream.ondata (_stream_readable.js:642:20)
+      at UnpackStream.emit (events.js:159:13)
+      at addChunk (_stream_readable.js:265:12)
